@@ -2,7 +2,7 @@
 
 A Windows Forms application built with .NET Framework 4.8 for managing dog walking services, featuring client management, dog profiles, walk tracking, and secure user authentication.
 
-## ??? Architecture
+## Architecture
 
 This application follows a clean architecture pattern with the following projects:
 
@@ -11,7 +11,7 @@ This application follows a clean architecture pattern with the following project
 - **ECI.Test.DA** - Data Access Layer (Entity Framework & Repositories)
 - **ECI.Test.Shared** - Shared Models, DTOs, and Utilities
 
-## ?? Prerequisites
+##  Prerequisites
 
 Before setting up the project, ensure you have:
 
@@ -20,9 +20,9 @@ Before setting up the project, ensure you have:
 - **.NET Framework 4.8** installed
 - **Entity Framework 6** (included via NuGet packages)
 
-## ?? Database Configuration
+##  Database Configuration
 
-> **?? Important:** You need to update connection strings in TWO different App.config files depending on your needs.
+> ** Important:** You need to update connection strings in TWO different App.config files depending on your needs.
 
 ### 1. Application Runtime Configuration
 
@@ -135,7 +135,7 @@ The application creates the following tables:
 | **ClientDogs** | Many-to-many relationship between clients and dogs |
 | **Walks** | Walk records with date, duration, and assignments |
 
-## ?? User Credentials
+## User Credentials
 
 The application comes with pre-configured test users with secure password hashing:
 
@@ -146,7 +146,7 @@ The application comes with pre-configured test users with secure password hashin
 | **walker1** | walker123 | Dog walker account |
 | **manager** | manager123 | Manager account |
 
-## ?? Getting Started
+## Getting Started
 
 ### 1. Clone and Build
 ```bash
@@ -179,9 +179,9 @@ cd ECI.Test
 - Use any of the provided user credentials above
 - Example: Username: `admin`, Password: `admin123`
 
-## ?? Application Features
+## Application Features
 
-### ?? Main Features
+### Main Features
 - **User Authentication** - Secure login with password hashing
 - **Client Management** - Add, edit, delete client profiles
 - **Dog Management** - Manage dog profiles with breed and age
@@ -189,7 +189,7 @@ cd ECI.Test
 - **Data Validation** - Comprehensive input validation
 - **Error Handling** - User-friendly error messages with logging
 
-### ?? Technical Features
+###  Technical Features
 - **Dependency Injection** - Using Unity Container
 - **Repository Pattern** - Clean data access layer
 - **Custom Validation Framework** - FluentValidation-style validation
@@ -197,7 +197,7 @@ cd ECI.Test
 - **Entity Framework** - Code First approach with migrations
 - **Logging** - Comprehensive error logging to files
 
-## ?? Project Structure
+##  Project Structure
 
 ```
 ECI.Test/
@@ -219,7 +219,7 @@ ECI.Test/
     ??? Utilities/            # Shared utilities (password hashing)
 ```
 
-## ?? Database Migration Details
+##  Database Migration Details
 
 ### Migration Files
 The application includes the following migration:
@@ -233,7 +233,7 @@ Sample data is automatically created including:
 - **Sample walk records**
 - **4 test users** with hashed passwords
 
-## ?? Troubleshooting
+## Troubleshooting
 
 ### Logs
 Application logs are written to:
